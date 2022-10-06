@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
+
+
 const Home=()=>
 {
   return(
@@ -9,6 +11,7 @@ const Home=()=>
     <h1>
       Hellow  Home
     </h1>
+
     <nav>
       <ul>
         <li>
@@ -19,6 +22,9 @@ const Home=()=>
         </li>
         <li>
           <Link to="/About">About</Link>
+        </li>
+        <li>
+          <Link to="/Table">Table</Link>
         </li>
       </ul>
     </nav>

@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Data from "./Data";
 import Forminput from "./Forminput";
-
+import Table from "./Table";
 
 const Form=()=>
 {
+  const[getdata,setgetdata]=useState([]);
+
   return(
   <>
   <h1>
-    hellow form
+    Hellow Form
   </h1>
-  <Forminput data={Data} />
+  <Forminput data={Data} getapi={setgetdata} />
+  <br>
+  </br>
+  <Table postapi={getdata} />
   </>   
    
   )

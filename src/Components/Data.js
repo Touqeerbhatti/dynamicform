@@ -1,6 +1,6 @@
 const Data=[
     {
-        name:"name",
+        name:"uname",
         type:"text"
     },
     {
